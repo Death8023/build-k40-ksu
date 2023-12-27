@@ -7,7 +7,7 @@ on:
         description: '内核代码分支/Tag'
         required: false
         type: string
-        default: '14.0-alioth'
+        default: 'miui'
       config_name:
         description: '内核编译配置文件名'
         required: false
@@ -17,12 +17,12 @@ on:
         description: '内核仓库地址'
         required: false
         type: string
-        default: 'https://github.com/Death8023/InfiniR_kernel_alioth.git'
+        default: 'https://github.com/Death8023/kernel_xiaomi_alioth.git'
       clang_url:
         description: '编译器下载地址'
         required: false
         type: string
-        default: 'https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-16.0.6-release/WeebX-Clang-16.0.6.tar.gz'
+        default: 'https://git.xfj0.cn/https://github.com/ZyCromerZ/Clang/releases/download/18.0.0git-20231227-release/Clang-18.0.0git-20231227.tar.gz'
 
 jobs:
 
