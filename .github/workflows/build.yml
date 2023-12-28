@@ -22,7 +22,7 @@ on:
         description: '编译器下载地址'
         required: false
         type: string
-        default: 'https://git.xfj0.cn/https://github.com/ZyCromerZ/Clang/releases/download/18.0.0git-20231227-release/Clang-18.0.0git-20231227.tar.gz'
+        default: 'https://hub.gitmirror.com/https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-18.0.0git-release/WeebX-Clang-18.0.0git.tar.gz'
 
 jobs:
 
