@@ -62,9 +62,9 @@ jobs:
       - name: Clone Kernel
         run: |
           git clone --depth=1 -b ${{ inputs.kernel_tag }} ${{ inputs.git_url }} kernel-source
-          git clone https://github.com/tiann/KernelSU kernel-source/KernelSU
-          cd kernel-source 
-          ./KernelSU/kernel/setup.sh main
+      #git clone https://github.com/tiann/KernelSU kernel-source/KernelSU
+      #cd kernel-source 
+      #./KernelSU/kernel/setup.sh main
 
       - name: Make
         run: |
@@ -93,5 +93,5 @@ jobs:
       - name: Kernel REL
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ inputs.config_name }} KernelSU
+          name: ${{ inputs.config_name }} Apeiria
           path: ./Kernel.zip
