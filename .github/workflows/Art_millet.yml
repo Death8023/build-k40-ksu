@@ -89,10 +89,10 @@ jobs:
 
       - name: Zip
         run: |
-          zip -r -9 -q -o infinir_millet.zip new-boot.img Image
+          zip -r -9 -q -o Art_millet.zip new-boot.img Image
 
       - name: Kernel REL
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ inputs.config_name }} infinir_millet
-          path: ./infinir_millet.zip
+          name: ${{ inputs.config_name }} Art_millet
+          path: ./Art_millet.zip
