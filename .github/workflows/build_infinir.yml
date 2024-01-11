@@ -62,9 +62,9 @@ jobs:
       - name: Clone Kernel
         run: |
           git clone --depth=1 -b ${{ inputs.kernel_tag }} ${{ inputs.git_url }} kernel-source
-          git clone https://github.com/tiann/KernelSU kernel-source/KernelSU
-          cd kernel-source 
-          ./KernelSU/kernel/setup.sh main
+          #git clone https://github.com/tiann/KernelSU kernel-source/KernelSU
+          #cd kernel-source 
+          #./KernelSU/kernel/setup.sh main
 
       - name: Make
         run: |
@@ -89,10 +89,10 @@ jobs:
 
       - name: Zip
         run: |
-          zip -r -9 -q -o infinir_KernelSU.zip new-boot.img Image
+          zip -r -9 -q -o infinir_millet.zip new-boot.img Image
 
       - name: Kernel REL
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ inputs.config_name }} infinir_KernelSU
-          path: ./infinir_KernelSU.zip
+          name: ${{ inputs.config_name }} infinir_millet
+          path: ./infinir_millet.zip
