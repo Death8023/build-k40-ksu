@@ -58,6 +58,17 @@ jobs:
           mkdir clang
           wget ${{ inputs.clang_url }}
           tar -C clang/ -zxvf *.tar.gz
+
+
+      - name: change full capacity
+          run: sed -i '736s/.*/	*nom_cap_uah = ${{ vars.capacity }} *1000;/' drivers/power/supply/qcom/qpnp-fg-gen4.c
+
+
+      - name: change design full capacity
+          run: sed -i '28s/.*/	qcom,nom-batt-capacity-mah = < ${{ vars.capacity }} >;/' arch/arm64/boot/dts/vendor/qcom/fg-gen4-batterydata-alioth-FMT-4520mah.dtsi
+
+
+
       
       - name: Clone Kernel
         run: |
