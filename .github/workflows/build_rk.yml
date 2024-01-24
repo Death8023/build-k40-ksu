@@ -88,10 +88,10 @@ jobs:
 
       - name: Zip
         run: |
-          zip -r -9 -q -o Kernel.zip new-boot.img Image
+          zip -r -9 -q -o Art_millet_rk.zip new-boot.img Image
 
       - name: Kernel REL
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ inputs.config_name }} KernelSU
-          path: ./Kernel.zip
+          name: ${{ inputs.config_name }} Art_millet_rk
+          path: ./Art_millet_rk.zip
