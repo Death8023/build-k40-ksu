@@ -7,7 +7,7 @@ on:
         description: '内核代码分支/Tag'
         required: false
         type: string
-        default: 'miui'
+        default: 'base'
       config_name:
         description: '内核编译配置文件名'
         required: false
@@ -17,12 +17,12 @@ on:
         description: '内核仓库地址'
         required: false
         type: string
-        default: 'https://github.com/Death8023/kernel_xiaomi_alioth.git'
+        default: 'https://github.com/Death8023/kernel_xiaomi_sm8250_M.git'
       clang_url:
         description: '编译器下载地址'
         required: false
         type: string
-        default: 'https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240222-release/Clang-19.0.0git-20240222.tar.gz'
+        default: 'https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240305-release/Clang-19.0.0git-20240305.tar.gz'
 
 jobs:
 
