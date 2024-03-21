@@ -22,7 +22,7 @@ on:
         description: '编译器下载地址'
         required: false
         type: string
-        default: 'https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240315-release/Clang-19.0.0git-20240315.tar.gz'
+        default: 'https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240320-release/Clang-19.0.0git-20240320.tar.gz'
 
 jobs:
 
